@@ -1,209 +1,761 @@
-<!-- ****** Blank Bootstrap 4.6 starting template for 101922, Web & Time Based Design. <div> tags should be replaced with semantic HTML tags where appropriate  ***** -->
-<!DOCTYPE html>
+/* ****** Blank Bootstrap 4.6 starting template for 101922, Web & Time Based Design */
 
-<html lang="en" dir="ltr">
+/* Custom styles to overide and add to Bootstrap 4.6 css */
 
-  <head>
-    <!-- Required Boostrap meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+/* starter template section */
+.card {
+background-color: darkblue;
+}
 
-    <!-- Other meta tags -->
-    <meta name="Sam Pashmi" content="Max's Website">
-    <meta name="Sam Pashmi" content="MAX DESIGN & CONSTRUCTION">
-
-    <!-- ***** Link tags ***** -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
-      <!-- IDEA: Or use Google's Material Icons (https://material.io/)- used like Google Fonts: http://google.github.io/material-design-icons/-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-
-      <!-- Font Awesome (https://fontawesome.com/) -->
-       <script src="https://kit.fontawesome.com/0b061bfed8.js" crossorigin="anonymous"></script>
-
-      <!-- Webfonts -->
-      <!-- IDEA: add you Google font link tags here -->
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif&display=swap" rel="stylesheet">
-
-      <!-- Stylesheet for lightbox If you want to have an Image gallery make sure you include this link -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+/* navbar CSS generator: https://work.smarchal.com/twbscolor/ */
 
 
-      <!-- Bootstrap core CSS -->
-      <!-- IDEA: this is where Boostrap's CSS is loaded in via their CDN - you don't need to include the actual files in your site folder, but they are usful to refer to-->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-      <!-- Your custom styles for this template - must be after Bootstrap's link element to over ride it (load after) as needed -->
-      <link href="css/custom.css" rel="stylesheet">
+.navbar{
+	background: #AB8C6D;
+	justify-content: space-between;
+	}
 
-    <title>Max, Design & Construction</title>
-  </head>
+.nav-link , .navbar-brand{
+	color: #FFCC33;
+	cursor: pointer;
+	transition: 0.3s;
+}
 
-   <body>
-     <!-- navbar -->
-     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-       <div class="container-fluid">
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-     </button>
-      <p class="Max">MAX DESIGN & CONSTRUCTION</p>
-             <picture>
-                 <source srcset="img/logodesktop.png" media="(min-width: 768px)">
-                 <source srcset="img/logomobile.png" media="(max-width: 767px)">
-                   <source srcset="img/logomobile.png" media="(min-width: 507px)">
-                 <img src="img/logo-default.png" alt="Logo" class="logo">
-             </picture>
-     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-       <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col-12 justify-content-end">
-         <li class="nav-item">
-           <a class="nav-link on" href="index.html" title="HOME"> HOME</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="Services.html" title="Services"> Services</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="About.html" title="About us"> About us</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="Contact.html" title="Contact us"> Contact us</a>
-         </li>
-       </ul>
-     </div>
-     </div>
-   </nav>
+.on {
+	text-decoration: underline;
+	text-decoration-thickness: 3px;
+	text-decoration-color: #FFCC33;
+}
 
-     <header class="header">
-       <div class="space-3">
-       </div>
-       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-            <img src="img/carousel1.jpeg" class="d-block w-100" alt="Landscape Design">
-            </div>
-            <div class="carousel-item">
-            <img src="img/carousel2.png" class="d-block w-100" alt="Construction Design">
-            </div>
-            <div class="carousel-item">
-            <img src="img/carousel3.jpeg" class="d-block w-100" alt="Landscape Design">
-            </div>
-            <div class="carousel-item">
-              <img src="img/carousel4.png" class="d-block w-100" alt="Construction Design">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only px-4">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only px-4">Next</span>
-          </a>
-        </div>
-     </header>
+.on:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 3px;
+	text-decoration-color: #FFCC33;
+}
 
-     <!-- Content goes here -->
-     <div class="container">
-      <h1 class="glow" id="home">REVIEWS</h1>
-        <section class="gallery-block compact-gallery">
-          <div class="row align-items-center">
-          <div class="col-md-6 col-lg-4 col-xl-3 item zoom-on-hover">
-            <a class="lightbox" href="img/LANDSCAPING1.png">
-              <img class="img-fluid image" src="img/LANDSCAPING1.png" alt="LANDSCAPING">
-              <span class="description">
-                <span class="description-body2">Max was amazing & did a fantastic job, efficiently & delivered the project on time. It was an enjoyable experience as he worked with us according to our requirements & gave us alternative options when required. The final product was truly amazing!!! He is coming back to do more & I can't recommend anyone better than him to do an amazing landscape project.</span>
-              </span>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xl-3 item zoom-on-hover">
-            <a class="lightbox" href="img/DECKING.png">
-              <img class="img-fluid image" src="img/DECKING.png" alt="DECKING">
-              <span class="description">
-                <span class="description-body">Max did an excellent job in our garden and was professional throughout. His price was fair and he delivered a great end product. I would hire Max again for future projects and would recommend him for other jobs.</span>
-              </span>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xl-3 item zoom-on-hover">
-            <a class="lightbox" href="img/FENCING1.png">
-              <img class="img-fluid image" src="img/FENCING1.png" alt="FENCING">
-              <span class="description">
-                <span class="description-body2">I would like to thank Max and his great team. They have completed a number of projects for me and family. The outcome of their work is well above our expectation and they were completed in a timely manner. I have no conservation to recommend Max to anyone who would like to turn their front and backyard into a beautiful place to enjoy. Many thanks to his professional team members as they are very easy to deal with and hard working. Well done.</span>
-              </span>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xl-3 item zoom-on-hover">
-            <a class="lightbox" href="img/MASONRY0.png">
-              <img class="img-fluid image" src="img/MASONRY0.png" alt="MASONRY">
-              <span class="description">
-                <span class="description-body">A completely professional job by Max and his team and before they had even completed different retaining wall I had booked them to do the rear yard. I was so delighted with their job.</span>
-              </span>
-            </a>
-          </div>
-          </div>
-                </section>
-    <!-- Form starts here -->
-
-    </div>
+.navbar-collapse {
+   flex-grow: 0;
+}
 
 
-    <footer class="jumbotron text-center">
-      <!-- footer information and social media links -->
-      <a class="px-2 social" href="tel:0431948699"><i class="fas fa-phone-square-alt fa-3x"></i></a>
-      <a class="px-2 social" href="mailto:maxlandscapedesign@gmail.com" target="_blank"><i class="fas fa-envelope-square fa-3x"></i></a>
-      <a class="px-2 social" href="https://www.youtube.com/@maxlandscaping" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
-      <a class="px-2 social" href="https://www.instagram.com/maxlandscapedesign/" target="_blank"><i class="fab fa-instagram-square fa-3x"></i></a>
-      <a class="px-2 social" href="https://www.facebook.com/people/Max-Design-Construction/100063697147951/" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
-      <span>&#169;</span>
-    </footer>
+.nav-link{
+	margin-right: 1rem !important;
+}
+*/
+
+.nav-link:hover{
+	background: black;
+	color: #FFCC33;
+  text-decoration-line: underline;
+}
+
+.navbar-brand:hover {
+	background: black;
+	color: #FFCC33;
+  padding: 5px;
+}
 
 
-<!-- =================No Content below here========================= -->
-    <!-- Bootstrap JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-<!-- This script is for the accordian - start -->
-    <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
+.navbar-toggler{
+  background: black !important;
+	color: #FFCC33;
+}
 
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
-      });
+/* If not useing a generator use a simple class like this - as applied in HTML */
+/* .nav_bg {
+  background-color: rgba(255, 90, 50, 1);
+} */
+
+body {
+		background-color: #3c2f2c;
+			cursor: url(../img/STARS-OF-SAM.png), auto;
+}
+
+.pp {
+	padding: 40px;
+}
+
+/* Examples of adding to Bootstrap classes with your own classes */
+.starter-template {
+  padding: 3rem 1.5rem;
+}
+.starter-template h2{
+  text-transform: uppercase;
+  color: rgba(86, 61, 255, .75);
+}
+
+/* -------------------------------------------------------- */
+/* Custom CSS for highlighting grid examples and options - Not essential to use in your own design.*/
+
+/* column highlighting and content spacing */
+header.container {
+	background-color: #8d6555;
+	border-top: 3px solid #8d6555;
+}
+
+.container {
+	background-color: #3c2f2c;
+	max-width: 94%;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+/* Adjust logo size for smaller screens */
+@media (max-width: 768px) {
+    .logo {
+        width: 150px;
     }
-    </script>
-<!-- This script is for accordian - end -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+}
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+@media (max-width: 507px) {
+    .logo {
+        width: 110px;
+    }
+}
 
-        <!--Java Script for Lightbox THIS IS A MUST HAVE LINK AND CODE TO ACTIVATE LIGHTBOX FOR YOUR WEBSITE-->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-            <script> baguetteBox.run('.compact-gallery', {animation:'slideIn'});</script>
-  </body>
-</html>
-<!-- ****** Blank Bootstrap 4.5 starting template for 101922, Web & Time Based Design  ***** -->
+.containerNAV {
+	background-color: snow;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0rem;
+    padding-left: 0rem;
+}
+
+
+.row {
+  margin-bottom: 0;
+}
+
+[class*="col-"] {
+  padding-top: 1px;
+  padding-bottom: 0px;
+}
+
+[class*="col-md-12 col-lg-12 & item zoom-on-hover"]  {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+[class*="col-12 T2"]  {
+	border-top: 6px dotted snow;
+	border-bottom: 6px dotted snow;
+	text-align: left;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+}
+
+.space {
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 50px;
+	border-top: 3px solid #3c2f2c;
+	background-color: #3c2f2c;
+}
+
+.space-2 {
+	border-radius: 5px;
+	padding: 40px;
+	border-top: 3px solid #3c2f2c;
+	background-color: #3c2f2c;
+}
+
+.space-3 {
+  border-radius: 5px;
+	padding: 70px;
+	border-top: 3px solid #3c2f2c;
+	background-color: #3c2f2c;
+}
+
+.glow {
+	color: #FFCC33;
+	padding: 30px;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+	@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #FF6600, 0 0 20px #FF6600, 0 0 30px #FFCC33, 0 0 40px #FFCC33, 0 0 50px #FFCC33, 0 0 60px #FFCC33, 0 0 70px #FFCC33;
+  }
+  to {
+    text-shadow: 0 0 20px #FF6600, 0 0 30px #CC0000, 0 0 40px #CC0000, 0 0 50px #CC0000, 0 0 60px #CC0000, 0 0 70px #CC0000, 0 0 80px #CC0000;
+  }
+}
+
+.center {
+	  text-align: center;
+}
+
+.minus{
+	margin-right: 0px;
+  margin-left: 0px;
+}
+
+.distance {
+	justify-content: space-between;
+	}
+
+
+		.middle {
+			display: flex;
+	    justify-content: center;
+	}
+
+/* AI BOOBS*/
+label {
+		font-weight: bold;
+		display: block;
+		margin-top: 10px;
+		color: Snow;
+}
+input, textarea {
+		width: 100%;
+		padding: 8px;
+		margin-top: 5px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+}
+button {
+		margin-top: 15px;
+		padding: 10px;
+		background-color: #000;
+		color: #fff;
+		border: none;
+		cursor: pointer;
+}
+button:hover {
+		background-color: #333;
+}
+/* AI BOOBS*/
+
+
+
+/* -------------------------------------------------------- */
+
+/* sets the default rem size for an entire page (for all sizing to be relative to) */
+
+html {
+  font-size: 1rem;
+}
+
+/* Examples of customising Bootstrap's media queries at different 'snapping' points - for example, change the size of your browser window and watch the <p> text colour change. Don't EVER change the pixel variables or you will be creating snapping points between Bootstrap's default snapping points - just add your styles in the brackets of the @media queries*/
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+  p{
+    color: #FFCC33;
+  }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  p{
+    color: #FFCC33;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  p{
+    color: #FFCC33;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  p{
+    color: #FFCC33;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  p{
+    color: #FFCC33;
+  }
+}
+
+/* -------------------------------------------------------- */
+
+/* Resume template specific styles  */
+
+.jumbotron{
+  margin-bottom: 0;
+  background: #AB8C6D;
+}
+
+h1, h2, h3, h4, h5 {
+font-family: 'Noto Serif', serif;
+}
+
+	h2 {
+ color: transparent;
+ padding-top: .5rem;
+		 padding-bottom: 1rem;
+		 font-size: 3rem;
+		 animation: effect 2s linear infinite;
+		 }
+
+		 @keyframes effect {
+0% {
+	 background: linear-gradient(#FF6600, #FFCC33);
+	 -webkit-background-clip: text;
+	 }
+
+100% {
+			 background: linear-gradient(#FFCC33, #FF6600);
+	 -webkit-background-clip: text;
+}
+}
+
+h3 {
+	color: #FFCC33;
+	color: transparent;
+	font-weight: bold;
+animation: effect 2s linear infinite;
+}
+
+h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+	color: #FFCC33;
+	color: transparent;
+	font-weight: bold;
+padding-top: 0.5rem;
+padding-bottom: 1rem;
+animation: effect 2s linear infinite;
+}
+
+p, ul, ol, a, li {
+font-family: 'Noto Sans', sans-serif;
+color: Snow;
+margin-bottom: 0;
+}
+
+p.intro {
+	color: #FFCC33;
+	font-size: 1.1em;
+	padding-top: 1em;
+	text-align: left;
+}
+
+/*header style*/
+.header{
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	background-color: blue;
+}
+
+.overlay{
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(244, 244, 244, 0.60);
+}
+
+.description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2rem;
+}
+
+.description h1{
+	color: #33DDFF;
+  font-size: 4rem;
+}
+
+.description p {
+	color:#666;
+	font-size: 1.5rem;
+	width: 100%;
+	line-height: 1.5;
+  }
+
+.description button{
+	border: 1px solid #33DDFF;
+	background: #33DDFF;
+	color: #fff;
+  }
+
+  button a{
+  	color: #fff;
+        }
+
+.navbar-dark .navbar-nav .nav-link:active {
+	border-radius: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+color: #FFCC33;
+border-radius: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+	font-weight: bold;
+	color: snow;
+	border-radius: 10px;
+}
+
+[class*="Max"] {
+  margin-left: 1.5% !important;
+  margin-right: 5%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Noto Sans', sans-serif;
+	font-weight: bold;
+  color: snow;
+}
+
+    button a:hover {
+      color: #FFCC33;
+      text-decoration: none;
+      }
+
+.col-8 {
+  border: 0;
+  border-left: 6px solid #33DDFF;
+  padding-left: 3rem;
+}
+
+.col-4 {
+  padding-right: 3rem;
+}
+
+/* Contact Form */
+
+
+
+/* Social Media icons */
+a.social {
+  text-decoration: none;
+}
+
+a.social:hover {
+  color: snow;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* span standout words */
+.standout {
+	    font-weight: 700;
+	    font-size: 1.2em;
+          }
+
+
+/* LIGHTBOX starts here */
+.gallery-block {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.gallery-block .heading{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.gallery-block .heading h2{
+    font-size: 2.5rem;
+		color: #33DDFF;
+		padding-top: .5rem;
+	text-align: left;
+}
+
+.gallery-block.compact-gallery .item{
+  overflow: hidden;
+  margin-bottom: 0;
+ margin-bottom: 20px;
+  opacity: 1;
+	border: 0;
+}
+
+.gallery-block.compact-gallery .item .image{
+  transition: 0.8s ease;
+}
+
+.gallery-block.compact-gallery .item .info{
+  position: relative;
+    display: inline-block;
+}
+
+.gallery-block.compact-gallery .item .description{
+  display: grid;
+	   position: absolute;
+    bottom: 0;
+    left: 0;
+    color: snow;
+    padding: 10px;
+    line-height: 1.5rem;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    opacity: 1;
+    transition: 0.8s ease;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
+}
+
+.gallery-block.compact-gallery .item .description .description-heading{
+  font-size: 250%;
+  font-weight: bold;
+	margin-top: -12%;
+  color: snow;
+	line-height: normal;
+}
+
+.gallery-block.compact-gallery .item .description .description-heading2{
+  font-size: 200%;
+  font-weight: bold;
+	margin-top: -12%;
+  color: snow;
+	line-height: normal;
+}
+
+.gallery-block.compact-gallery .item .description .description-body{
+  font-size: 150%;
+  font-weight: Bold;
+	line-height: normal;
+  margin-top: -35%;
+}
+
+.gallery-block.compact-gallery .item .description .description-body2{
+  font-size: 110%;
+	font-weight: Bold;
+	line-height: normal;
+  margin-top: -37%;
+}
+
+.gallery-block.compact-gallery .item .description .description-body3{
+  font-size: 160%;
+	font-weight: Bold;
+	line-height: normal;
+  margin-top: -5%;
+}
+
+@media (min-width: 576px) {
+
+  .gallery-block.compact-gallery .item .description {
+    opacity: 0;
+  }
+
+  .gallery-block.compact-gallery .item a:hover .description {
+    opacity: 1;
+  }
+
+  .gallery-block .zoom-on-hover:hover .image {
+    transform: scale(1.3);
+    opacity: 0.6;
+  }
+}
+
+/* LIGHTBOX Finish here */
+
+/* ACCORDIAN starts here */
+/* Style the buttons that are used to open and close the accordion panel */
+
+   .accordion {
+               background-color: black;
+               color: #FFCC33;
+               cursor: pointer;
+               padding: 18px;
+               width: 100%;
+               text-align: center;
+               border: solid 1px snow;
+							 border-radius: 20px;
+               outline: none;
+               transition: 0.4s;
+	             margin-bottom: 1em;
+              }
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.accordion:hover {
+  color: #FFCC33;
+	background-color: snow;
+   }
+
+.accordion:active{
+background-color: snow;
+}
+
+
+
+
+
+
+
+.accordion2 {
+						background-color: black;
+						color: #FFCC33;
+						cursor: pointer;
+						width: 100%;
+						text-align: center;
+						border-radius: 10px;
+						outline: none;
+						transition: 0.4s;
+				    margin-bottom: 1em;
+					 }
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.accordion2:hover {
+color: #FFCC33;
+background-color: snow;
+}
+
+.accordion2:active{
+background-color: snow;
+}
+
+
+
+
+
+
+/* Style the accordion panel. Note: hidden by default */
+
+          .panel {
+                 padding: 0 18px;
+                 display: none;
+                 overflow: hidden;
+                 }
+
+/* ACCORDIAN Finish here */
+
+/* Form.css */
+form {
+	padding-bottom: 3rem;
+}
+
+.formstyle {
+  background: snow;
+  border: 0;
+}
+
+.form-group {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1rem;
+  max-width: 100%;
+  background: grey;
+	}
+
+.form-control {
+	font-size: 1rem;
+	border: 1px solid #33DDFF;
+}
+
+.box{
+background-color: snow;
+padding: 10px;
+border-radius: 10px;
+}
+
+li.col-3 {
+display: inline;
+}
+
+article {
+	margin: 0;
+	padding: 0;
+}
+
+[class*="col-12 ME"] {
+		border-top: 6px dotted snow;
+		border-bottom: 6px dotted snow;
+		text-align: left;
+		padding-bottom: 10px;
+		margin-bottom: 20px;
+	}
+
+[class*="col-sm-6 col-md-6 col-lg-6 HME"] {
+padding-left: 0px;
+color: transparent;
+padding-top: .5rem;
+		padding-bottom: 1rem;
+		animation: effect 2s linear infinite;
+}
+
+[class*="col-sm-6 col-md-6 col-lg-6 HMPN"] {
+padding-left: 0px;
+color: transparent;
+padding-top: .5rem;
+	 padding-bottom: 1rem;
+	 animation: effect 2s linear infinite;
+}
+
+
+[class*="col-12 S"] {
+color: transparent;
+text-align: center;
+	 animation: effect 2s linear infinite;
+	 font-size: 2rem;
+	 border-top: 6px dotted snow;
+	 border-bottom: 6px dotted snow;
+	 margin-bottom: 0;
+}
+
+span.description-heading{
+    font-family: var(--body-font-font-family);
+}
+
+span.description-heading2{
+    font-family: var(--body-font-font-family);
+}
+
+span.description-body{
+    font-family: var(--body-font-font-family);
+}
+
+span.description-body2{
+    font-family: var(--body-font-font-family);
+}
+
+span.description-body3{
+    font-family: var(--body-font-font-family);
+}
+
+
+p.IM{
+	color: snow;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+
+p.IM2{
+	color: snow;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+[class*="col-md-2 IM"] {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+[class*="col-6 MGSJ"]{
+	border-right: 6px dotted snow;
+}
+
+[class*="col-6 JSGM"]{
+	border-left: 6px dotted snow;
+}
+/* ****** Blank Bootstrap 4.6 starting template for 101922, Web & Time Based Design */
+li.news{
+	margin-bottom: 5px;
+}
